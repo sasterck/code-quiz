@@ -20,6 +20,22 @@ var quizEnd = document.getElementById('Fin');
 
 // Now, onto the more difficult part - adding the questions.
 
-var quizQuestions = [ {
-    Question: "How are you?"
-}]
+var quizQuestions = [ 
+    {
+    Question: "How are you?",
+    optionA: "AWE-mazing",
+    optionB: "Meh, I'm taking a quiz",
+    optionC: "Bad as can be",
+    questionAnswer: "A", "B", "C"
+},
+
+// question 2 - watch out for those leprichauns.
+    {
+    Question: "What do you primarily use for styling a web-site/page?",
+    optionA: "HTML",
+    optionB: "Laptop Leprichauns",
+    optionC: "CSS",
+    questionAnswer: "C"
+    },
+
+]
