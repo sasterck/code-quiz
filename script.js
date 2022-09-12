@@ -39,3 +39,5 @@ var quizQuestions = [
     },
 
 ]
+
+// Time for the timer
