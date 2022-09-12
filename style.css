@@ -2,3 +2,41 @@
     background-color: azure;
 
 }
+
+/* maybe i won't give the container a border color etc */
+
+.container {
+    margin: 5px;
+    border: 3px;
+    padding: 1px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box, blueviolet;
+    box-shadow: 5px, rgba(55, 30, 78, 0.633)
+
+}
+
+/* I may put the display to flex
+instead of block but check when i have service */
+
+header {
+    margin: 20px;
+    border: 15px;
+    padding:10px;
+    color:black;
+    display: block;
+    align-items: center;
+}
+
+h1 {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+
+h2 {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+
+}

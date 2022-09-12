@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet"
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <header><h1><b>It's Code Quiz Time</b></h1></header>
@@ -24,11 +24,31 @@
     </div>
 
     <div id = "quiz"> 
+        <!-- It's the final count dowwwwnnnnn -->
         <div id ="timer">Time Remaining: </div>
 
-        <div id = "questions"><h3>Question to asked</h3></div>
+<!-- to code or not to code, that is the question -->
+
+        <div id = "questions"><h3>Question to be asked</h3></div>
+
+        <!-- The bottons for the answers to the questions - do 3 -->
+
         <button id="A" onclick="checkAnswer('A')">A</button>
+        <button id="B" onclick="checkAnswer('B')">B</button>
+        <button id="C" onclick="checkAnswer('C')">C</button>
+
+<!-- when  you're right, you're right, but I'm usually wrong.  -->
+
+        <div id = 'answer'></div>
+
     </div>
+    <div id = 'Fin'></div>
+
+    <!-- It's over, let's see your score! -->
+
+    <div id = 'Score'></div>
+
+    <script src = '/script.js'></script>
     
 </body>
 </html>
