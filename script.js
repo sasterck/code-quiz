@@ -35,9 +35,19 @@ var quizQuestions = [
     optionA: "HTML",
     optionB: "Laptop Leprichauns",
     optionC: "CSS",
-    questionAnswer: "C"
-    },
+    questionAnswer: "C"},
 
 ]
 
 // Time for the timer
+
+timerInterval = setInterval(function)
+{
+    timeLeft--;
+    quizTimer.textContent = 'Time Remaining ' + timeLeft;
+
+    if(timeLeft=== 0) {
+        clearInterval(timerInterval);
+        scoreTotal();
+    }
+}
