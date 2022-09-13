@@ -18,6 +18,17 @@ var scoreTotal = document.getElementById('Score');
 
 var quizEnd = document.getElementById('Fin');
 
+// This really got me feeling like I don't know a thing. Trying to match the timer to the question
+
+var finalQuestionIndex = quizQuestions.length;
+
+var currentQuestionIndex = 0;
+var timeLeft = 90;
+var timerInterval;
+var correct;
+var scoreTotal = 0;
+
+
 // Now, onto the more difficult part - adding the questions.
 
 var quizQuestions = [ 
@@ -51,3 +62,9 @@ timerInterval = setInterval(function)
         scoreTotal();
     }
 }
+
+function generateQuizQuestion(){
+    quizEnd.style.display = "none";
+    if (currentQuestionIndex === finalQuestionIndex){
+        return scoreTotal();
+    } 
