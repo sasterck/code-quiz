@@ -61,7 +61,15 @@ timerInterval = setInterval(function)
         clearInterval(timerInterval);
         scoreTotal();
     }
+    quizMain.style.display = "block";
 }
+
+// Show the score
+function showScore(){
+    quizMain.style.display = "none"
+    quizEnd.style.display = "flex";
+    clearInterval(timerInterval);
+    finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
 
 
 function generateQuizQuestion() {
@@ -75,4 +83,6 @@ function generateQuizQuestion() {
     buttonA.innerHTML = currentQuestion.optionA;
     buttonB.innerHTML = currentQuestion.optionB;
     buttonC.innerHTML = currentQuestion.optionC;
-};
+}
+
+startButton.addEventListener("click",startQuiz);
