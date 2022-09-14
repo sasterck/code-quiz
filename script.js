@@ -63,8 +63,16 @@ timerInterval = setInterval(function)
     }
 }
 
-function generateQuizQuestion(){
+
+function generateQuizQuestion() {
     quizEnd.style.display = "none";
     if (currentQuestionIndex === finalQuestionIndex){
         return scoreTotal();
-    } 
+    }
+
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    questionsEl.innerHTML = "<p>" + currentQuestion.Question + "</p>";
+    buttonA.innerHTML = currentQuestion.optionA;
+    buttonB.innerHTML = currentQuestion.optionB;
+    buttonC.innerHTML = currentQuestion.optionC;
+};
