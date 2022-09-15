@@ -12,9 +12,15 @@ var optionC = document.getElementById('C');
 
 var questionAnswer = document.getElementById('answer');
 
+var questionsEl = document.getElementById("questions");
+
 var quizTimer = document.getElementById('timer');
 
 var scoreTotal = document.getElementById('Score');
+
+var resultsEl = document.getElementById("result");
+
+var finalScoreEl = document.getElementById("finalScore");
 
 var quizEnd = document.getElementById('Fin');
 
@@ -86,3 +92,22 @@ function generateQuizQuestion() {
 }
 
 startButton.addEventListener("click",startQuiz);
+
+function checkAnswer(answer){
+    correct = quizQuestions[currentQuestionIndex].correctAnswer;
+
+    if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
+        score++;
+        alert("That Is Correct!");
+        currentQuestionIndex++;
+        generateQuizQuestion();
+        
+    }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+        alert("Incorrect.")
+        currentQuestionIndex++;
+        generateQuizQuestion();
+    }
+
+    else{
+        showScore();
+    }
