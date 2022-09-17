@@ -8,9 +8,9 @@ N/A
 
 ## Visuals
 
-![Screenshot of Page](./assets/images/Screenshot%20(41).png)
+![Screenshot of Page](Screenshot%20(42).png)
 
-[Deployed Site] (https://sasterck.github.io/mod-3/)
+[Deployed Site] (https://sasterck.github.io/code-quiz/)
 
 ## Installation
 N/A
